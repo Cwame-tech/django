@@ -1,0 +1,15 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <link href="{% static 'ind.css' %}" rel="stylesheet" type="text/css">
+        <title>Is it Independence Day?</title>
+    </head>
+    <body>
+        {% if Independence %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>OOOPS! TODAY IS NOT INDEPENDENCE DAY</h1>
+        {% endif %}
+    </body>
+</html>
